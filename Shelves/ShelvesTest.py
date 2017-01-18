@@ -15,7 +15,7 @@ import shelve
 if __name__ == "__main__":
 
     #Save
-    db = shelve.open('shelve_db')
+    db = shelve.open('shelve_db')#缺省打开方式:需要时创建文件,否则以可读可写的方式打开
     db['name'] = {'first name': 'Qiuxiong', 'last name': 'Zhuang'}
     db.close()
 
